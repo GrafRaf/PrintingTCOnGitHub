@@ -1,75 +1,22 @@
-<!doctype html>
+﻿<!doctype html>
 <html ng-app>
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <link rel="stylesheet" href="http://angular-ui.github.io/lib/bootstrap/docs/assets/css/bootstrap.css" >
-    <link rel="stylesheet" href="http://angular-ui.github.io/lib/angular-ui/build/angular-ui.css" >  
-    <link rel="stylesheet" href="/stylesheets/stylesheet.css">
-	 <link rel="stylesheet" href="/stylesheets/todo.css">
+    <link rel="stylesheet" href="http://angular-ui.github.io/lib/bootstrap/docs/assets/css/bootstrap.css">
+    <link rel="stylesheet" href="http://angular-ui.github.io/lib/angular-ui/build/angular-ui.css">
+    <link rel="stylesheet" href="/css/site.css">
+    <title>Всёнавсём - UV-печать на любых плоских поверхностях и материалах</title>
   </head>
+
   <body>
-  	<header class="navbar navbar-fixed-top">
-		<div class="navbar-inner">
-			<div class="container">
-				<div class="pull-left">
-					<a class="brand dropdown-toggle" role="button" data-toggle="dropdown" href="#"> 
-						Всёнавсём.рф
-					</a>
-				</div>
-				<div class="nav-collapse">
-					<ul class="nav">
-						<li class="active">
-							<a href="#main">Главная</a>
-						</li>
-						<li>
-							<a href="#services">Услуги</a>
-						</li>
-						<li>
-							<a href="#catalog">Каталог</a>
-						</li>						
-						<li>
-							<a href="#contacts">Контакты</a>
-						</li>						
-					</ul>
-				</div>
-			</div>
-		</div>
-	</header>
-  
-  <div class="container">
-  <section>
-  	<p>Каждый человек - творец своей жизни, режиссер своей судьбы и декоратор своего пространства. 
-       Вдохнуть новую жизнь в обыденные интерьеры, мебель и привычные вещи - основная цель нашей компании. 
-       Вы хотите преобразить детскую вашего ребенка, чтобы на стенах была изображена сцена из любимого мультфильма, 
-       в ванной комнате плавали дельфины, на кухне было желание скушать яблоко, а гостиную в стиле hi-tech? 
-       Думаете, как преобразить фасад здания? Сделать стильный, дорогой и незабываемый подарок себе и своим близким?  
-       В этом всём мы можем вам помочь. Мы печатаем цветные изображения  фото-качества  напрямую на стекле,
-       пластике, дереве, холсте и других материалах. Звоните сейчас (383)&nbsp;255-32-36, и мы поможем  реализовать все ваши идеи и замыслы.</p>
-       </section>
-  </section>
-<!--
-	<h2>Todo</h2>
-    <div ng-controller="TodoCtrl">
-      <span>{{remaining()}} of {{todos.length}} remaining</span>
-      [ <a href="" ng-click="archive()">archive</a> ]
-      <ul class="unstyled">
-        <li ng-repeat="todo in todos">
-          <input type="checkbox" ng-model="todo.done">
-          <span class="done-{{todo.done}}">{{todo.text}}</span>
-        </li>
-      </ul>
-      <form ng-submit="addTodo()">
-        <input type="text" ng-model="todoText"  size="30"
-               placeholder="add new todo here">
-        <input class="btn-primary" type="submit" value="add">
-      </form>
-    </div>
--->    
+    <header class="navbar navbar-fixed-top" ng-include src="/templates/header.htm"></header>
+    <div ng-view></div>
+    <footer ng-include src="/templates/footer.htm"></footer>  
   </body>
 
   <script src="http://angular-ui.github.io/lib/bootstrap/docs/assets/js/bootstrap.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"></script>
-	<script src="http://angular-ui.github.io/lib/angular-ui/build/angular-ui.js"></script>
-  <script src="/javascripts/todo.js"></script>
+  <script src="http://angular-ui.github.io/lib/angular-ui/build/angular-ui.js"></script>
+  <script src="/scripts/main.js"></script>
 
 </html>
