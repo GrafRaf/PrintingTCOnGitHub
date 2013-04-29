@@ -6,6 +6,35 @@
   <link rel="stylesheet" href="/stylesheets/todo.css">
   </head>
   <body>
+  	<header class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<div class="pull-left">
+					<a class="brand dropdown-toggle" role="button" data-toggle="dropdown" href="#"> 
+						Всёнавсём.рф
+						<b class="caret"></b>
+					</a>
+				</div>
+				<div class="nav-collapse">
+					<ul class="nav">
+						<li class="active">
+							<a scrollto href="#top">Главная</a>
+						</li>
+						<li>
+							<a scrollto href="#top">Услуги</a>
+						</li>
+						<li>
+							<a scrollto href="#top">Каталог</a>
+						</li>						
+						<li>
+							<a scrollto href="#top">Контакты</a>
+						</li>						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+  
     <h2>Todo</h2>
     <div ng-controller="TodoCtrl">
       <span>{{remaining()}} of {{todos.length}} remaining</span>
